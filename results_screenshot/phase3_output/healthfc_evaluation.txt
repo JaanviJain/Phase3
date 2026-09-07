@@ -1,0 +1,42 @@
+======================================================================
+PHASE 3: EVIDENCE HIERARCHY EVALUATION REPORT
+======================================================================
+NOTE: Ground truth created by mapping citation types:
+      T1_Primary -> B, T2_Guideline -> B, T3_Reference -> C, T4_Supplementary -> D
+
+Total samples: 725
+Accuracy:  0.9503
+Macro P:   0.3045
+Macro R:   0.2661
+Macro F1:  0.2769
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           A       0.00      0.00      0.00         0
+           B       0.22      0.08      0.12        25
+           C       0.00      0.00      0.00         2
+           D       1.00      0.98      0.99       698
+
+    accuracy                           0.95       725
+   macro avg       0.30      0.27      0.28       725
+weighted avg       0.97      0.95      0.96       725
+
+Confusion Matrix (A/B/C/D):
+[[  0   0   0   0]
+ [ 22   2   0   1]
+ [  0   0   0   2]
+ [  1   7   3 687]]
+True Tier Distribution (from T1-T4 mapping):
+true_tier
+B     25
+C      2
+D    698
+Name: count, dtype: int64
+Predicted Tier Distribution (from evidence_text):
+predicted_tier
+A     23
+B      9
+C      3
+D    690
+Name: count, dtype: int64

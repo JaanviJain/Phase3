@@ -1,0 +1,27 @@
+======================================================================
+PHASE 3: PUBMED EVALUATION REPORT
+======================================================================
+Ground truth: PubMed publication type filters
+Total articles: 1198
+Accuracy:  0.7780
+Macro P:   0.8083
+Macro R:   0.7781
+Macro F1:  0.7741
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           A       0.93      0.57      0.71       300
+           B       0.69      0.82      0.75       300
+           C       0.90      0.75      0.82       299
+           D       0.71      0.97      0.82       299
+
+    accuracy                           0.78      1198
+   macro avg       0.81      0.78      0.77      1198
+weighted avg       0.81      0.78      0.77      1198
+
+Confusion Matrix:
+[[171  73   8  48]
+ [ 11 247  17  25]
+ [  0  30 224  45]
+ [  1   7   1 290]]
