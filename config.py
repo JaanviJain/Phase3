@@ -125,6 +125,10 @@ TIERS = {
 
 # LLM settings for optional LLM-based classification
 LLM_MODEL = "deepseek-ai/deepseek-llm-7b-base"  # Change to your Phase 2 model if desired
+
+# ADD THESE TWO LINES FOR OLLAMA COMPATIBILITY:
+OLLAMA_URL = "http://localhost:11434/api/generate"
+OLLAMA_MODEL = "qwen2.5:7b"  # Or whatever local model you run via Ollama
 # PubMed evaluation set
 PUBMED_EVAL_DIR = os.path.join(DATA_DIR, "pubmed_evaluation")
 os.makedirs(PUBMED_EVAL_DIR, exist_ok=True)
